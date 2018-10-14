@@ -85,10 +85,9 @@ gulp.task('scripts', function () {
 // 'app/libs/jquery/jquery-migrate-1.2.1.min.js',
 'app/libs/nicescroll/jquery.nicescroll.min.js',
 'app/libs/jQuery-Mask/jquery.mask.min.js',
-'app/libs/icheck/icheck.min.js',
 'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 'app/libs/jquery.PageScroll2id/jquery.PageScroll2id.min.js',
-
+'app/libs/equalHeights/equalHeights.min.js',
 // 'app/libs/equalHeights/equalHeights.min.js',
 // 'app/libs/animate/animate-css.js',
 // 'app/libs/animate/jquery.waypoints.min.js',
@@ -204,7 +203,7 @@ gulp.task('sprite', function () {
 // Generate the icons.
 gulp.task('genfav', function(done) {
     realFavicon.generateFavicon({
-        masterPicture: 'app/favicon/basic.png',
+        masterPicture: 'app/favicon/basic.svg',
         dest: 'app/images/favicon/',
         iconsPath: 'images/favicon',
         design: {

@@ -1,20 +1,67 @@
 @import '_var.scss';
 
-/* font-family: "OswaldBold"; */
+/* font-family: "OpenSansRegular"; */
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
+
 /* font-family: "RobotoRegular"; */
 @font-face {
-	font-family: "RobotoMedium";
-	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+	url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 700;
 }
+
+
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "NexaBold";
+	src: url("../fonts/Nexa-Bold/NexaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Nexa-Bold/NexaBold.woff") format("woff"),
+	url("../fonts/Nexa-Bold/NexaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "Montserrat-Medium";
+	src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"),
+	url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"),
+	url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+
+
+
+// 100 — тонкое начертание;
+// 200 — сверхсветлое;
+// 300 — светлое;
+// 400 — нормальное (аналогично normal);
+// 500 — среднее;
+// 600 — полужирное;
+// 700 — жирное (аналогично bold);
+// 800 — сверхжирное;
+// 900 — тяжёлое.
+// https://webfonts.pro/

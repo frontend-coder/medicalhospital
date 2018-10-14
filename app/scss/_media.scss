@@ -23,7 +23,9 @@
 @media only screen and (min-width : 1200px) {
   .container {width: 1170px;  margin: 0 auto;}
 }
-
+@media only screen and (min-width : 1201px) {
+  .container {width: 1250px;  margin: 0 auto;}
+}
 /* ниже размещено стили оформления наполнения шаблона в
 зависимостиь от разрешения, в документ были вклюены все разрешения
 не зависомо от требования заказчика  */

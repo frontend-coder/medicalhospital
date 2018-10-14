@@ -1,14 +1,14 @@
 *::-webkit-input-placeholder {
-color:#202020;
+color:#6a6a6a;
 opacity: 1;
 }
 
 *:-moz-placeholder {
-color:#202020;
+color:#6a6a6a;
 	opacity: 1;
 }
 *::-moz-placeholder {
-color:#202020;
+color:#6a6a6a;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
@@ -27,6 +27,7 @@ box-sizing: border-box;
 width: 100%;
 /* height: 100%; */
 font-size: 16px;
+color:#6a6a6a;
 line-height: 1.42;
 margin:0;
 padding:0;
@@ -36,13 +37,13 @@ padding:0;
 body {
 font-family: "RobotoRegular", sans-serif;
 font-size: 16px;
-line-height: 1.42;
+line-height:(30px / 16px);
 position: relative;
 min-width: 320px;
 height: 100%;
 margin:0;
 padding:0;
-color: #000000;
+color:#6a6a6a;
 opacity: 1;
 -webkit-backface-visibility:hidden;
 -webkit-font-smoothing:antialised;
@@ -57,7 +58,9 @@ body input:required:valid,
 body textarea:required:valid {
 
 }
-
+.container {
+	width: 1600px;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }

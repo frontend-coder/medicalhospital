@@ -1,29 +1,74 @@
 @import '_var.scss';
 
-.header_img {
- background: #000 url('../images/header-fon_655.jpg') center center no-repeat;
- min-height:655px;
- background-size: cover;
- position: relative;
+.header_box {
+  padding: 0;
+  margin: 0;
 }
-.header_img:before {
-position: absolute;
-content: "";
-background: transparent url('../images/septik-ergobox.png') center center no-repeat;
-width: 695px;
-height: 565px;
-bottom: -8%;
-left: 4%;
- z-index: 10;
+
+.top_logo_box {
+  background-color: #fff;
+  height: 100px;
+}
+
+.top_logo_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-bottom:2px solid #ececec;
+}
+.top_logo {
+  padding: 0;
+  margin: 0;
+}
+
+.top_logo img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.top_info {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top_info_items {
+  display: flex;
+  margin-right: 40px;
+}
+.top_info_items:last-child {
+  margin-right: 0;
+}
+.tii_icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $color_acsent;
+  color: #fff;
+  @include font-size(30px);
+}
+.tii_text  {
+  white-space:nowrap;
+  padding-left: 20px;
+  @include font-size(15px);
+  line-height: (22px / 15px);
+  font-family: "OpenSansBold", sans-serif;
+}
+.tii_days {
+  font-family: "OpenSansRegular";
+  display: block;
+}
+.tii_days span {
+  text-transform: uppercase;
 }
 
 .top_line {
-  background-color: $white_color;
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-    box-shadow: 1px 1px 1px #95989A;
+  background-color: #fff;
+  height: 90px;
 }
 
 .top_line_box {
@@ -31,10 +76,6 @@ left: 4%;
   height: 100px;
   align-items: center;
   justify-content: space-between;
-}
-
-.top_line_logo {
-  color: #fff;
 }
 
 .top_line_menu {
@@ -45,214 +86,136 @@ left: 4%;
   display: inline-block;
 }
 .top_line_menu ul li a {
-    font-family: "RobotoMedium", sans-serif;
+  font-family: "NexaBold", sans-serif;
   display: block;
-  text-transform: uppercase;
-  color: #000;
- padding: 10px;
- @include font-size(20px);
+  color: #6c6c6c;
+  padding: 10px;
+  @include font-size(20px);
   line-height:(24px / 20px);
   @include trans;
-
 }
 
 .top_line_menu ul li a:hover {
-color: $color_button;
+  color: #262626;
 }
-.top_line_phone ul li {
-  margin-bottom: 2px;
-font-size: 0.9rem;
-  font-weight: 600;
-
+.top_line_social ul li {
+  margin-right: 10px;
+  display: inline-block;
 }
-.top_line_phone ul li:nth-child(2) {
-  margin-bottom: 5px;
-}
-.top_line_phone ul li a {
-  color:$color_button;
-  @include trans;
-   @include font-size(24px);
- /*   font-weight: 600; */
-}
-
-.top_line_phone ul li a:hover {
-  color:$color_hoverbutton;
-}
-/*  оформление мобильной версии меню и гамбургера */
-.mobile_gamburger {
-  display: none;
-}
-
-.mobile_gamburger {
-  width: 50px;
-  height: 50px;
-  display: none;
-  z-index: 100;
-}
-
-.toggle-mnu {
-  display: block;
-/*   float:right;
-position:absolute;
-right:10px;top:0; */
-text-align:center;
-line-height:48px;
-}
-.toggle-mnu{
-  display:block;
-  width:50px;
-  height:50px;
-  margin-top:15px;
+.top_line_social ul li:last-child {
   margin-right: 0;
 }
-.toggle-mnu span:after, .toggle-mnu span:before {
-content:"";
-position:absolute;
-left:0;
-top:9px;
+.top_line_social ul li a {
+ color: #191919;
+ @include trans;
+ @include font-size(23px);
 }
-.toggle-mnu span:after {
-  top:18px;
-}
-.toggle-mnu span{
-  position:relative;
-  display:block;
-}
-.toggle-mnu span,.toggle-mnu span:after,.toggle-mnu span:before {
-  width:100%;
-  height:3px;
-  background-color:#000;
-  transition:all .3s;
-  backface-visibility:hidden;
-  border-radius:3px;
-}
-.toggle-mnu.on span {
-  background-color:transparent;
-}
-.toggle-mnu.on span:before {
-  -webkit-transform:rotate(45deg) translate(-1px,0);
-  -ms-transform:rotate(45deg) translate(-1px,0);
-  transform:rotate(45deg) translate(-1px,0);
-}
-.toggle-mnu.on span:after {
-  -webkit-transform:rotate(-45deg) translate(6px,-7px);
-  -ms-transform:rotate(-45deg) translate(6px,-7px);
-  transform:rotate(-45deg) translate(6px,-7px);
-}
-
-.toggle-mnu.on+#menu {
-  opacity:1;visibility:visible;
+.top_line_social ul li a:hover {
+  color:$color_hoverbutton;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-стили оформления контента в хедере
-*/
-.header_content {
-  padding: 15% 0;
+.mobile_gamburger {
+  display: none;
 }
 
-.header_content_item {
-  width: 70%;
-  margin:0;
-  float: left;
+
+.main_header_baner {
+  background-image: url('../images/header-fon.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+min-height:640px;
 }
 
-.header_content_item:last-child {
-  width: 30%;
+
+.main_header_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 640px;
+}
+.main_header {
+  width: 61%;
+text-align: center;
+}
+.main_header h1{
+  @include font-size(47px);
+  line-height: (53px / 47px);
+    font-family: "Montserrat-Medium", sans-serif;
+    color:#474747;
+margin-bottom: 35px;
 }
 
-.header_cover {
-   background-color: rgba(255, 137, 65, 0.75);
-  padding-top: 15px;
-  padding-bottom: 45px;
-  padding-left: 10px;
-  position: relative;
-  clip-path: polygon(0 0, 83% 0, 100% 100%, 0 100%);
-
+.main_header h2{
+ @include font-size(17px);
+  line-height: (23px / 17px);
+      color:#3f3f3f;
+      margin-bottom: 40px;
 }
 
-.header_title h1 {
- @include font-size(70px);
- font-weight: 100;
- text-transform: uppercase;
- color: #fff;
- line-height: 1;
- font-family: "RobotoRegular", sans-serif;
- text-shadow: 1px 1px 1px #95989A;
+.header_button {
+    @include font-size(18px);
+  display: inline-block;
+  font-family: "OpenSansBold", sans-serif;
+  padding: 18px 25px;
+  background-color: #1a9bdc;
+  color:#fff;
+text-transform: uppercase;
+border-radius: 10rem;
+  @include trans;
 
 }
-.header_title h1 span {
-  display: block;
-  @include font-size(45px);
-  font-family: "RobotoRegular", sans-serif;
-  font-weight: normal;
-  text-transform: none;
+.header_button:hover {
+ background-color: darken(#1a9bdc, 10%);
 }
 
-.header_descr {
-  margin-top: 10px;
-  color: #000;
-  @include font-size(25px);
-}
-.header_descr span {
-  font-weight: 400;
-  @include font-size(35px);
-  text-transform: uppercase;
-      font-weight: 700;
-}
-.header_termes {
-  margin-top: 10px;
-  @include font-size(12px);
+
+
+.block_best {
+display: flex;
+justify-content: space-between;
 }
 
-.big_form_box {
-  padding: 0;
-  margin: 0;
-  padding-top: 212px;
+.block_best_items {
+  width: 25%;
+  padding: 75px 0 55px 0;
+text-align: center;
+color:#fff;
 }
 
-.form_fon {
-  background-color: rgba(#000, .7);
-  padding-bottom: 5px;
-  padding-top: 70px;
-  position: relative;
+.block_best_one {
+ background-color: #43b1d2;
 }
-.form_fon:before {
-  content: '';
-  position: absolute;
-bottom: 71.75%;
-  background: transparent url('../images/women.png') center center no-repeat;
-  width: 293px;
-  height: 302px;
-  margin: 0 auto;
+.block_best_two {
+ background-color: #3fb6c6;
 }
-.top_mnu,
-.hidden-mnu { display: none;}
+.block_best_three {
+ background-color: #3cbbbb;
+}
+.block_best_foure {
+ background-color: #37c3a8;
+}
+
+.block_best_pic {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+background-color: #fff;
+margin: 0 auto 25px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.block_best_pic img {
+display: inline-block;
+height: 55px;
+margin:auto;
+width: 45px;
+}
+.block_best_title {
+margin-bottom: 28px;
+  @include font-size(30px);
+  font-family: "Montserrat-Bold", sans-serif;
+}
