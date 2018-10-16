@@ -45,7 +45,11 @@
   content: "\f0da"; }
 
 
+.fa-caret-left:before {
+  content: "\f0d9"; }
 
+.fa-search:before {
+  content: "\f002"; }
 
 
 
