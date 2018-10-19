@@ -1,8 +1,8 @@
 @import '_var.scss';
 
-/* font-family: "OpenSansRegular"; */
 @font-face {
 	font-family: "OpenSansRegular";
+	src: url('../fonts/OpenSansRegular/OpenSansRegular.eot');
 	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
 	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
@@ -10,9 +10,9 @@
 	font-weight: normal;
 }
 
-/* font-family: "RobotoRegular"; */
 @font-face {
 	font-family: "OpenSansBold";
+	src: url('../fonts/OpenSansBold/OpenSansBold.eot');
 	src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
 	url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
@@ -20,10 +20,9 @@
 	font-weight: 700;
 }
 
-
-/* font-family: "RobotoRegular"; */
 @font-face {
 	font-family: "NexaBold";
+	src: url('../fonts/Nexa-Bold/NexaBold.eot');
 	src: url("../fonts/Nexa-Bold/NexaBold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/Nexa-Bold/NexaBold.woff") format("woff"),
 	url("../fonts/Nexa-Bold/NexaBold.ttf") format("truetype");
@@ -31,9 +30,9 @@
 	font-weight: 700;
 }
 
-/* font-family: "RobotoRegular"; */
 @font-face {
 	font-family: "Montserrat-Medium";
+    src: url('../fonts/Montserrat-Medium/Montserrat-Medium.eot');
 	src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"),
 	url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype");
@@ -41,9 +40,9 @@
 	font-weight: 500;
 }
 
-
 @font-face {
 	font-family: "Montserrat-Bold";
+   src: url('../fonts/Montserrat-Bold/Montserrat-Bold.eot');
 	src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"),
 	url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype");

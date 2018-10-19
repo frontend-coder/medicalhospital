@@ -165,7 +165,7 @@ gulp.task('critical', function () {
 });
 
 // сборка проекта
-gulp.task('build', ['clean', 'img', 'css-libs', 'scripts', 'critical'], function(){
+gulp.task('build', ['clean', 'img', 'css-libs', 'scripts'], function(){
 
 var buildCss = gulp.src(['app/css/libs.min.css','app/css/main.min.css'])
 .pipe(concat('libs.min.css'))
@@ -178,8 +178,8 @@ var buildfonts = gulp.src('app/fonts/**/*')
 var buildJs = gulp.src('app/js/**/*')
 .pipe(gulp.dest('dist/js'));
 
-// var buildHtml = gulp.src('app/*.html')
-// .pipe(gulp.dest('dist/'));
+ var buildHtml = gulp.src('app/*.html')
+ .pipe(gulp.dest('dist/'));
 
 var buildhtml5shiv = gulp.src('app/libs/html5shiv/**/*')
 .pipe(gulp.dest('dist/libs/html5shiv'));
