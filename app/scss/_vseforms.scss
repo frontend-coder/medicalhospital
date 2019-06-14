@@ -155,17 +155,3 @@
 		opacity: 0;
 		transform: translateY(-120%);
 		}
-/*
-	:focus::-webkit-input-placeholder {color: transparent}
-	:focus::-moz-placeholder          {color: transparent}
-    :focus:-ms-input-placeholder      {color: transparent} */
-
-
-							:-webkit-input-placeholder       {text-indent: 0px; opacity: 1;   transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:-moz-placeholder                {text-indent: 0px; opacity: 1;   transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:-moz-placeholder                 {text-indent: 0px; opacity: 1;  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:-ms-input-placeholder            {text-indent: 0px; opacity: 1;  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:focus::-webkit-input-placeholder {text-indent: 110%; opacity: 0; transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:focus::-moz-placeholder          {text-indent: 110%; opacity: 0; transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:focus:-moz-placeholder           {text-indent: 110%; opacity: 0; transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}
-							:focus:-ms-input-placeholder      {text-indent: 110%; opacity: 0; transition: text-indent 0.3s ease, opacity 0.3s ease .05s;}

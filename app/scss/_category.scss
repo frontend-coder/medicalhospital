@@ -360,7 +360,7 @@ margin-bottom: 5px;
   left: -51px;
   position: absolute;
   content: '';
-  background: url(../images/single/caska.png);
+  background: url(../img/single/caska.png);
   width: 138px;
   height: 94px; }
 
@@ -844,7 +844,7 @@ color:#8f1806;
   border: 0; }
 
 .checkbox input[type="checkbox"].css-checkbox + label.css-label {
-  background-image: url("../images/checkbox_yes.png");
+  background-image: url("../img/checkbox_yes.png");
   padding-left: 22px;
   display: inline-block;
   line-height: 15px;
@@ -859,7 +859,7 @@ color:#8f1806;
   opacity: 1.0; }
 
 .checkbox input[type="checkbox"]:checked + label.css-label {
-  background-image: url("../images/checkbox_no.png"); }
+  background-image: url("../img/checkbox_no.png"); }
 
 .css-label a {
 	color:#6a6a6a;

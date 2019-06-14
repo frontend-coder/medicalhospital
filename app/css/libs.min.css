@@ -5490,74 +5490,6 @@ body input:required:valid, body textarea:required:valid {
           transform: translateY(-120%);
 }
 
-/*
-	:focus::-webkit-input-placeholder {color: transparent}
-	:focus::-moz-placeholder          {color: transparent}
-    :focus:-ms-input-placeholder      {color: transparent} */
-:-webkit-input-placeholder {
-  text-indent: 0px;
-  opacity: 1;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:-moz-placeholder {
-  text-indent: 0px;
-  opacity: 1;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:-moz-placeholder {
-  text-indent: 0px;
-  opacity: 1;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:-ms-input-placeholder {
-  text-indent: 0px;
-  opacity: 1;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:focus::-webkit-input-placeholder {
-  text-indent: 110%;
-  opacity: 0;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:focus::-moz-placeholder {
-  text-indent: 110%;
-  opacity: 0;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:focus:-moz-placeholder {
-  text-indent: 110%;
-  opacity: 0;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
-:focus:-ms-input-placeholder {
-  text-indent: 110%;
-  opacity: 0;
-  -webkit-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  -o-transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-  transition: text-indent 0.3s ease, opacity 0.3s ease .05s;
-}
-
 .page_content {
   margin: 0;
   padding: 60px 0 40px 0;
@@ -5945,7 +5877,7 @@ background: none; */
   left: -51px;
   position: absolute;
   content: '';
-  background: url(../images/single/caska.png);
+  background: url(../img/single/caska.png);
   width: 138px;
   height: 94px;
 }
@@ -6481,7 +6413,7 @@ label.comment-field {
 }
 
 .checkbox input[type="checkbox"].css-checkbox + label.css-label {
-  background-image: url("../images/checkbox_yes.png");
+  background-image: url("../img/checkbox_yes.png");
   padding-left: 22px;
   display: inline-block;
   line-height: 15px;
@@ -6498,7 +6430,7 @@ label.comment-field {
 }
 
 .checkbox input[type="checkbox"]:checked + label.css-label {
-  background-image: url("../images/checkbox_no.png");
+  background-image: url("../img/checkbox_no.png");
 }
 
 .css-label a {
