@@ -731,6 +731,8 @@ $('.accordion-item .heading').on('click', function(e) {
 $(".portfolio_box").magnificPopup({
     delegate: 'a', // the selector for gallery item
     type: 'image',
+     fixedContentPos: false,
+  fixedBgPos:false,
     tClose: 'Закрыть (Esc)',
      mainClass: 'mfp-with-zoom',
       tLoading: 'Загрузка...',
@@ -761,6 +763,8 @@ $(".portfolio_box").magnificPopup({
 <script>
 $("a[href='#call-backtimer']").magnificPopup ({
 	mainClass:'mfp-fade',
+	 fixedContentPos: false,
+  fixedBgPos:false,
 	removalDelay:400,
 	type:'inline'
 });
